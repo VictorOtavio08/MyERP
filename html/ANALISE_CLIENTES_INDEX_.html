@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title> ANÁLISE DE CREDITO</title>
+			<!-- Aqui chamamos o nosso arquivo css externo -->
+		<link href="estilo.css" rel="stylesheet" type="text/css">
+			<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+			<!-- Bootstrap JAVA SCRIPT -->
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+
+</head><!--bgcolor="CECBCB -->
+		<body background="img/backgroundINDEX2.jpg">
+			<!-- jQuery (necessario para os plugins Javascript do Bootstrap) -->
+
+			<div class="center" align="Center">
+			
+				<br><b><i><h2>Análise de Crédito</b></i></br></h2><!-- texto de analise com estilo em css -->
+				
+			</div>
+				
+				<hr>
+				<div class=""
+					<div class="radiofisica">			<!-- DIV do RADIOBUTTON com posicionamento em CSS-->
+						<input type="radio" value="Fisica" name="tipoPessoa" id="Fisica" checked> Física
+
+						<div class="radiojuridica">
+							<input type="radio" value="Juridica" name="tipoPessoa" id="Juridica">Juridica
+
+						</div>
+					</div>
+
+			<h3><b>CPF:</b></h3>
+						<input type="Text" value"" name="CPF" style="width:20%;" pattern="\d{3}.\d{3}.\d{3}-\d{2}" maxlength="15" id="CPF" placeholder="Digite o CPF - Numeros COM pontos"/><!--texto cpf-->
+							<!--botao analisar cliente(histórico) BOOTSTRAP-->
+						<button type="button" class="btn-default">Analisar Cliente</button>
+
+						<form action="novaconsulta.html" method="get" class="novaanalise"><!-- botao nova analise-->
+							<!--botao analisar cliente(nova consulta) BOOTSTRAP-->
+							<button type="button" class="btn-primary">Nova Analise</button>
+                        </form>
+		  
+				<br><br><br><br>
+				
+			<fieldset style="width:90%;"><!-- fildset (grupBOX) -->
+				<legend>Filtrar por Intervalo de DATAS:</legend>
+					<input type="date" value="" name="datainicial" id="datainicial"/>
+					<input type="date" value="" name="datafinal" id="datafinal"/>
+					
+						    <b>&nbsp;&nbsp;&nbsp;Já Esteve Seprocado
+						<input type="radio" name="esteveseprocado"/>Sim
+						<input type="radio" name="esteveseprocado" checked/>Não</b>
+						<br>
+				
+					<form action="" method="GET">
+					<input type="submit" value="APLICAR FILTROS" name="filtros" id="filtros"/>
+				</form>
+				
+				<br>
+				
+				<table border=1 bgcolor="white"  ><!-- Tabela com linhas e colunas -->
+					<tr bgcolor="#5F9EA0">
+						<th id="nomecompleto">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NOME COMPLETO &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   </th>
+						<th id="cpf">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CPF&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+						<th id="dataconsulta">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DATA CONSULTA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+						<th id="score">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SCORE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+						<th id="usuario">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;USUÁRIO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+					</tr>
+					
+					<tr position="center">														<!-- primeira linha da table -->
+						<td align="center">Lucas Pinheiro Silva</td><!--campo nomecompleto -->
+						<td align="center">064.041.409-98</td><!--campo cpf-->
+						<td align="center">24/01/2015</td><!--campo data de consulta-->
+						<td align="center">456</td><!--campo do score-->
+						<td align="center">Luis Jorge</td><!--campo do usuario que fez a consulta-->						
+					</tr>			
+					
+					<tr bgcolor="#BDB76B">														<!-- segunda linha da table -->
+						<td align="center">Lucas Pinheiro Silva</td><!--campo nomecompleto -->
+						<td align="center">064.041.409-98</td><!--campo cpf-->
+						<td align="center">24/01/2015</td><!--campo data de consulta-->
+						<td align="center">245</td><!--campo do score-->
+						<td align="center">Maria Luiza</td><!--campo do usuario que fez a consulta-->
+					</tr>
+					
+					<tr>																		<!-- terceira linha da table -->
+						<td align="center">Lucas Pinheiro Silva</td><!--campo nomecompleto -->
+						<td align="center">064.041.409-98</td><!--campo cpf-->
+						<td align="center">24/01/2015</td><!--campo data de consulta-->
+						<td align="center">245</td><!--campo do score-->
+						<td align="center">Maria Luiza</td><!--campo do usuario que fez a consulta-->
+					</tr>
+					
+					<tr bgcolor="#BDB76B">														<!-- quarta linha da table -->
+						<td align="center">Lucas Pinheiro Silva</td><!--campo nomecompleto -->
+						<td align="center">064.041.409-98</td><!--campo cpf-->
+						<td align="center">24/01/2015</td><!--campo data de consulta-->
+						<td align="center">245</td><!--campo do score-->
+						<td align="center">Maria Luiza</td><!--campo do usuario que fez a consulta-->
+					</tr>
+				</table>
+			</fieldset>
+				
+				<br>
+			
+		
+		</body>
+<html>

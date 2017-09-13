@@ -1,0 +1,61 @@
+	
+							/*ALINHAMENTO DO TEXTO "analise de credito"*/
+
+
+.center {
+			margin:auto;
+			text-align: center;
+			width:50%;
+			border: 1px solid black;
+			border-radius: 20px;
+					}
+							/*SOBREAMENTO DO TEXTO "analise de credito"*/
+h2{
+	font-family:Arial;
+	font-size: 30pt;
+	color: black;
+	text-shadow: 0.5px 0.5px 1px white;
+}		
+		
+							/*ALINHAMENTO DOS RADIO BUTTON*/
+.radiofisica {
+    position: relative;
+    left: 50px;
+	bottom: 0px;
+}
+							.radiojuridica {
+								position: relative;
+								left: 70px;
+								bottom: 22px;
+
+							}
+
+                                /*ALINHAMENTO DO BOTAO "NOVA ANALISE"*/
+
+
+								/*DESIGN DA TABELA(TABLE)*/
+table, th, td {
+	margin:left;
+    border: 1px solid black;
+}
+nomecompleto{
+	width:450px;
+	padding:1px;	
+}
+cpf{
+	width:200px;
+	padding:1px;
+}
+dataconsulta{
+	width:150px;
+	padding:1px;
+}
+score{
+	width:100px;
+	padding:1px;
+}
+usuario{
+	width:250px;
+	padding:11px;
+	
+}
